@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>GitHub</title>
+  </head>
+  <body>
+    <header>
+      <h1>Github Search</h1>
+    </header>
+        <p class="alert hidden">Please put some data</p>
+    <div class="input-flex">
+    <input type="text" for="name" placeholder="Github Username" />
+    <input class="submit" type="submit" value="Search" />
+</div>
+    <div class="container hidden">
+        <div class="header">
+      <p class="userName"></p>
+    </div>
+    <div class="img hidden">
+      <img src="" />
+    </div>
+    <div class="content">
+        <i class="fa-solid fa-user pad"></i><p>Followers: <span class="followers"></span></p></p>
+    </div>
+    <div class="content">
+        <i class="fa-solid fa-users "></i><p>Following: <span class="following"></span></p>
+    </div>
+    <div class="content">
+        <i class="fa-solid fa-database pad"></i><p>Repos: <span class="repos"></span></p>
+    </div>
+    <div class="content">
+        <i class="fa-solid fa-file pad"></i><p>Created Date: <span class="created"></span></p>
+    </div>
+    <div class="content">
+        <i class="fa-regular fa-plus pad"></i><p>Updated Date: <span class="updated"></span></p>
+    </div>
+    </div>
+</div>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/5cc7706d1f.js" crossorigin="anonymous"></script>
+</html>

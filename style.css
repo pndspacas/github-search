@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.header {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  height: 550px;
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 15px;
+  flex: 1;
+  font-weight: 400;
+  gap: 5px;
+}
+
+.alert {
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  align-content: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 15px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 1px solid lightgray;
+}
+
+.submit {
+  background-color: lightgray;
+  font-weight: 700;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+input:focus {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.header,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.content:last-child {
+  border: none;
+}
+
+.pad {
+  padding-left: 3px;
+}
+
+.fa-user {
+  color: gold;
+}
+
+.fa-users {
+  color: skyblue;
+}
+
+.fa-database {
+  color: salmon;
+}
+
+.fa-file {
+  color: coral;
+}
+
+.fa-plus {
+  color: green;
+}
