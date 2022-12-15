@@ -5,13 +5,11 @@ let image = document.querySelector(".img");
 let container = document.querySelector(".container");
 
 function submit() {
-  const value = document.querySelector("input").value;
+  const value = document.querySelector("input").value.replace(/\s/g, "");
   const url = `https://api.github.com/users/${value}`;
-
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       if (value) {
         document.querySelector(".userName").textContent = data.name;
         document.querySelector("img").src = data.avatar_url;
@@ -31,4 +29,6 @@ function submit() {
         alertError.classList.toggle("hidden");
       }
     });
+  container.classList.add("hidden");
+  image.classList.add("hidden");
 }
